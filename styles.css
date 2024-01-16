@@ -18,6 +18,7 @@ width: 100%;
 max-width: 1500px;
 margin: auto;
 padding-bottom: 2em;
+padding-right: 10em;
 }
 
 h1 {
@@ -32,13 +33,15 @@ margin-top: 1em;
 }
 
 section {
-margin-bottom: 2em;
-padding: 1em;
-width: 122%;
-background-color: #f8f9fa;
-border-radius: 15px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2em auto; /* Centra la sección horizontalmente y añade margen arriba y abajo */
+    padding: 1em; /* Mantiene el padding igual en todos los lados */
+	padding-left:1em;
+    width: 114%; /* Establece un ancho máximo para la sección. Ajusta este valor según sea necesario */
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 img, iframe {
 width: 100%;
@@ -65,7 +68,7 @@ border-radius: 0;
 .iframe-container {
     width: 100%; /* Ajusta el ancho según sea necesario */
     padding-bottom: 60%; /* Ajusta la proporción de altura a un valor que funcione bien para tu contenido */
-	padding-right: 0%;
+	padding-right: 0;
     height: 0; /* Esto mantiene la proporción */
     position: relative;
     margin-bottom: 20px; /* Ajusta el margen entre iframes */
@@ -91,7 +94,7 @@ border-radius: 0;
     position: absolute;
     top: 0;
     left: 0;
-    width: 94%;
+    width: 100%;
     height: 87%;
     border-radius: 15px;
 	margin-bottom: 0;

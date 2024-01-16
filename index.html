@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Accidentes de Tráfico en Estados Unidos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Visualización de Accidentes de Tráfico en Estados Unidos</h1>
+    </header>
+    <main>
+		<section id="Introducción">
+            <h2>Introducción y agradecimientos</h2>
+			<p> Este portal pretende informar a los lectores acerca de los accidentes de tráfico que han ocurrido en EEUU. Para hacerlo, se han usado los siguientes datos: https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents. Esta fuente de datos contiene más de 6 millones de datos recopilados a partir del 2016 hasta mayo de 2023, cuando se actualizó por última vez. Me gustaría aprovechar esta oportunidad para agradecer su generosidad al creador de este conjunto de datos al compartir abiertamente esta información tan valiosa.</p>
+		</section>
+		<section id="Aumento de los accidentes">
+            <h2>Los accidentes de tráfico, un problema creciente</h2>
+			<p> Tal y como podemos observar en el siguiente gráfico interactivo, los accidentes de tráfico son, por desgracia, cada vez más frecuentes. </p>
+			<div class="flourish-embed flourish-chart" data-src="visualisation/16474725"></div>
+		</section>
+		<section id="Distribución de los accidentes">
+            <h2>¿Cómo es la distribución espacial de los accidentes?</h2>
+			<p> La mayoría de accidentes suceden en los estados costeros, especialmente en la zona de California y Oregón. El siguiente mapa de calor muestra el número de accidentes por habitante por región.</p>
+			<div class="flourish-embed flourish-map" data-src="visualisation/16474540"></div>
+			
+			<p> Hemos creado este mapa de burbujas para visualizar de forma clara la distribución de los accidentes por ciudades, expresado en términos absolutos.</p>
+			<div class="flourish-embed flourish-bubble-chart" data-src="visualisation/16475569"></div>
+		</section>
+		<section id="Severidad de los accidentes">
+            <h2>Impacto de los accidentes en carretera</h2>
+			<p> En el siguiente gráfico podemos observar el impacto que tienen los accidentes en el tráfico. Esta medida es una forma objetiva de analizar la magnitud del accidente, que está muy relacionado con la gravedad de este. Para una visualización clara, hemos clasificado dicho impacto en las siguientes categorías: "Highest", "Highh", "Medium" y "Low".</p>
+			<div class="flourish-embed flourish-chart" data-src="visualisation/16474616"></div>
+			<h2>Las señales de tráfico como solución</h2>
+			<p> Por otro lado, un análisis posterior ha revelado que existe cierta correlación entre la severidad de los accidentes y señalización de la zona. El siguiente gráfico muestra el número de accidentes desglosado por severidad y agrupado por la existencia o no de la señalización adecuada en la zona.</p>
+            <img src="SeñalTrafico_PivoPlot.png" alt="Proporción de Accidentes con y sin Señal de Tráfico por Severidad">
+			<p> Como se puede observar, los accidentes menos severos son los que ocurren en mayor proporción en zonas señalizadas. Por el contrario, los accidentes más graves suelen ocurrir en zonas no señalizadas.<p>
+		</section>
+<section id="Distribución temporal">
+    <h2>¿Cómo es la distribución temporal de los accidentes?</h2>
+	<p> Si observamos los días de la semana en los que son más frecuentes los accidentes, observamos como hay menos accidentes el fin de semana. Entre semana, los accidentes van aumentando ligeramente a medida que se acerca el fin de semana.</p>
+    <div class="iframe-container">
+        <iframe src="accidents_by_day_week.html" title="Accidentes por Día de la Semana"></iframe>
+    </div>
+	<p> Al observar la distribución por meses, observamos una distribución relativamente estable, aunque en los meses fríos suelen haber más accidentes.</p>
+    <div class="iframe-container">
+        <iframe src="accidents_by_month.html" title="Accidentes por Mes"></iframe>
+    </div>
+</section>
+    </main>
+    <footer>
+        <p>© 2024 Visualización de Accidentes de Coche</p>
+    </footer>
+</body>
+</html>
